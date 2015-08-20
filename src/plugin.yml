@@ -1,0 +1,32 @@
+name: Pay4Day
+main: cf.jesseke55.Pay4Day.Pay4Day
+version: 3.2.5
+authors: [jesseke55, ProtocllWeb]
+website: www.jesseke55.xyz
+depend: [Vault]
+commands:
+  pay4day:
+    description: Buy the day, night, sun, rain or storm.
+    usage: /<command>
+  pay4night:
+    description: Buy the night.
+    usage: /<command>
+  pay4sun:
+    description: Buy the sun.
+    usage: /<command>
+  pay4rain:
+    description: Buy the rain.
+    usage: /<command>
+  pay4storm:
+    description: Buy the storm.
+    usage: /<command>
+  pay4help:
+    description: Shows the help of the plugin.
+    usage: /<command>
+  pay4version:
+    description: Shows the version of the plugin.
+    usage: /<command>
+    aliases: [pay4ver]
+  pay4about:
+    description: About the plugin.
+    usage: /<command>
