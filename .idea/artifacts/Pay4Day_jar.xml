@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Pay4Day:jar">
+    <output-path>$USER_HOME$/Bureaublad</output-path>
+    <root id="archive" name="Pay4Day.jar">
+      <element id="module-output" name="Pay4Day" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>

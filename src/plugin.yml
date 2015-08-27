@@ -1,6 +1,6 @@
 name: Pay4Day
-main: cf.jesseke55.Pay4Day.Pay4Day
-version: 3.2.5
+main: xyz.jesseke55.Pay4Day.Pay4Day
+version: 3.2.6
 authors: [jesseke55, ProtocllWeb]
 website: www.jesseke55.xyz
 depend: [Vault]

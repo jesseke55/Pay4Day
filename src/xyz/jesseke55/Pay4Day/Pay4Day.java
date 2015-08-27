@@ -38,12 +38,14 @@ public class Pay4Day
 
     loadConfig();
     getLogger().info("-------------------------");
+    getLogger().info("");
     getLogger().info("Name: " + getDescription().getName() );
     getLogger().info("Version: " + getDescription().getVersion() );
     getLogger().info("Authors: " + getDescription().getAuthors() );
     getLogger().info("Website: " + getDescription().getWebsite() );
     getLogger().info("");
     getLogger().info(ChatColor.GREEN + "Please leave a rate if you like the plugin!");
+    getLogger().info("");
     getLogger().info("-------------------------");
   }
 
