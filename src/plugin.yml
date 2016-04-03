@@ -1,8 +1,8 @@
 name: Pay4Day
-main: xyz.jesseke55.Pay4Day.Pay4Day
-version: 3.2.6
-authors: [jesseke55, ProtocllWeb]
-website: www.jesseke55.xyz
+main: pw.headhunterz.resources.pay4day.Pay4Day
+version: 3.2.7
+authors: [jesseke55, ProtocllWeb, Headhunterz_]
+website: www.headhunterz.pw
 depend: [Vault]
 commands:
   pay4day:

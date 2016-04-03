@@ -1,17 +1,16 @@
-package xyz.jesseke55.Pay4Day;
-
-import java.io.File;
+package pw.headhunterz.resources.pay4day;
 
 import net.milkbowl.vault.economy.Economy;
 import net.milkbowl.vault.economy.EconomyResponse;
-
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import java.io.File;
 
 public class Pay4Day
         extends JavaPlugin
@@ -19,9 +18,11 @@ public class Pay4Day
   String prefix = ChatColor.GREEN + "[Pay4Day] ";
   public File configFile = new File(getDataFolder(), "config.yml");
   public static Economy econ = null;
+  private static Plugin plugin;
 
   public void onDisable()
   {
+    plugin = null;
     getLogger().info("Pay4Day has been disabled!");
   }
 
@@ -33,7 +34,7 @@ public class Pay4Day
       getServer().getPluginManager().disablePlugin(this);
       return;
     }
-
+plugin = this;
 
 
     loadConfig();
@@ -286,7 +287,7 @@ public class Pay4Day
   {
     if (!this.configFile.exists())
     {
-      getLogger().info("Config didn't exist. Creating new");
+      getLogger().info("Config didn't exist. Creating a new one");
       getConfig().options().copyDefaults(true);
     }
     getConfig().addDefault("config.price.classic", Double.valueOf(100.0D));
