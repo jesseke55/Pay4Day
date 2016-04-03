@@ -1,6 +1,6 @@
 name: Pay4Day
 main: pw.headhunterz.resources.pay4day.Pay4Day
-version: 3.2.7
+version: 3.2.8
 authors: [jesseke55, ProtocllWeb, Headhunterz_]
 website: www.headhunterz.pw
 depend: [Vault]
