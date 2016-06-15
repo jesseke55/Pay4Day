@@ -2,6 +2,7 @@ package pw.headhunterz.resources.pay4day;
 
 import net.milkbowl.vault.economy.Economy;
 import net.milkbowl.vault.economy.EconomyResponse;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -11,6 +12,7 @@ import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
+import java.util.Collection;
 
 public class Pay4Day
         extends JavaPlugin
@@ -260,8 +262,8 @@ plugin = this;
       sender.sendMessage(prefix + getConfig().getString(new StringBuilder("msg.").append(getConfig().getString("config.language")).append(".surcces_msg_").append(typ).toString()));
       if (getConfig().getBoolean("config.sendLocalMsg"))
       {
-        Player[] arrayOfPlayer;
-        int j = (arrayOfPlayer = getServer().getOnlinePlayers()).length;
+        Collection<Player> arrayOfPlayer = Bukkit.getOnlinePlayers().size();
+        for j = Collection<Player> arrayOfPlayer = Bukkit.getOnlinePlayers().size();
         for (int i = 0; i < j; i++)
         {
           Player p = arrayOfPlayer[i];
